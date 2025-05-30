@@ -137,6 +137,6 @@ wsServer.on("connection", (ws) => {
 
 
 
-server.listen(3000, "0.0.0.0", () => {
+server.listen(3000, "", () => {
     console.log("server started at http://localhost:3000");
 })
