@@ -82,7 +82,7 @@ wsServer.on("connection", (ws) => {
                         room.startWaitingCountdown(5, true);
                         setTimeout(() => {
                             room.startWaitingCountdown(5, false);
-                        }, 2000)
+                        }, 20000)
                     }
 
                     if (room.players.length == 4) {
@@ -137,6 +137,6 @@ wsServer.on("connection", (ws) => {
 
 
 
-server.listen(3000, "", () => {
+server.listen(process.env.PORT || 3000, "", () => {
     console.log("server started at http://localhost:3000");
 })
